@@ -1,7 +1,7 @@
 #include <thread>
 #include <iostream>
 #include <chrono>
-
+#include <vector>
 using namespace::std;
 
 class Car{
@@ -18,6 +18,10 @@ class Car{
     }
     void setLocation(int location){
         this->LOCATION = location;
+    }
+    int getspeed()
+    {
+        return this->SPEED;
     }
     int getLocation(){
         return this->LOCATION;
@@ -45,7 +49,7 @@ void run(Car c, int counter, int sleeptime){
             // break;
         }
         cout<<std::this_thread::get_id()<<"\t";
-        std::this_thread::sleep_for(std::chrono::milliseconds(sleeptime*1000));
+        std::this_thread::sleep_for(std::chrono::milliseconds(sleeptime));
         loc = c.getLocation();
         cout<<loc<<endl;
         if(c.getDirection()==1) c.setLocation(++loc);
@@ -53,6 +57,18 @@ void run(Car c, int counter, int sleeptime){
         i++;
     }
     cout<<std::this_thread::get_id()<<"\tended"<<endl;
+}
+int getpulse(std::vector<Car> cars)
+{
+    //Function to find shortest rate in milliseconds
+    float maxspeed =cars[0].getspeed();
+    for(int i =1;i<cars.size();i++)
+    {
+        if(cars[i].getspeed()>maxspeed)
+            maxspeed=cars[i].getspeed();
+    }
+    return (1/maxspeed)*1000;
+    return maxspeed;
 }
 
 int Car::LEFT_END;
@@ -62,13 +78,16 @@ int main(){
     Car::initializeEnds(0,100);
     Car car1 = Car(2,1,95,5,0);
     Car car2 = Car(2,0,2,5,0);
+    //for calculation of shortest time
+    vector<Car> v1;
+    v1.push_back(car1);
+    v1.push_back(car2);
+    int refresh_rate=getpulse(v1);
 
-    thread th1(&run, car1, 10, 1);
-    thread th2(&run, car2, 5, 2);
-
+    thread th1(&run, car1, 10, refresh_rate);
+    thread th2(&run, car2, 5, refresh_rate);
     th1.join();
     th2.join();
-
     cout<<"END";
     return 0;
 }
