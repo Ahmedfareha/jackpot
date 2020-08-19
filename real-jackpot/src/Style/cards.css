@@ -1,0 +1,43 @@
+.row{
+    margin: 0px;
+}
+.card{
+    padding:30px;
+    margin: 30px;
+    background: linear-gradient(55deg, black, #03345f, transparent);
+    opacity: 0.95;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #c0bebe;
+    cursor: pointer;
+}
+.card:hover{
+    opacity: 1;
+    background: linear-gradient(55deg, black, #03345f);
+}
+.card-row{
+    /* margin: 30px; */
+    opacity: 0.9;
+}
+.card-title{
+    background:linear-gradient(55deg, black, darkred, transparent); 
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+}
+.card-text{
+    border-radius: 10px;
+    margin: 30px;
+}
+.card-button{
+    background-color: darkgoldenrod;
+    font-weight: 700;
+    font-display: block;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    opacity: .9;
+}
+.card-button:hover{
+    opacity: 1;
+}

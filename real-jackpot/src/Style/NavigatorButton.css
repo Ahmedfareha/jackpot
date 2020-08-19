@@ -1,0 +1,16 @@
+button{
+    background-color: transparent;
+    font-weight: 400;
+    display: inline;
+    
+    padding-left: 20px !important;
+    border: beige;
+    cursor: pointer;
+    opacity: 0.75;
+    font-weight: 400;
+    font-size: 20px;
+}
+button:hover{
+    opacity: 1;
+    font-weight: 800;
+}

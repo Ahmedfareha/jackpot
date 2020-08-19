@@ -1,0 +1,10 @@
+.nav{
+    background: linear-gradient(75deg, rgb(17, 17, 17), rgb(97, 94, 94));
+    opacity: 0.95;
+}
+.img-responsive{
+    border-radius: 100px;
+}
+.row{
+    margin: 0px;
+}
