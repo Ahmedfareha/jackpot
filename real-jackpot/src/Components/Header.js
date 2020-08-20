@@ -9,7 +9,10 @@ const header = () => {
             <nav>                
                 <div className="row nav">
                     <div className="col-sm-2">
-                        <img style={{height:"100%", width:"100%", padding:"50px", cursor:"pointer",}} src={menu} alt="boohoo" className="img-responsive"/>
+                        <div class="box small">
+                            <img src={menu} alt="Cloudy Sky"></img>
+                        </div>
+                        {/* <img style={{height:"50%", width:"50%", padding:"0px", cursor:"pointer",}} src={menu} alt="boohoo" className="img-responsive"/> */}
                     </div>
                     <div className="row col-sm-10">
                         <NavigatorButton name="Home"/>

@@ -1,22 +1,27 @@
-.row{
-    margin: 0px;
-}
 .card{
     padding:30px;
-    margin: 30px;
+    display: block !important;
+    border: none !important;
+}
+.card-body{
+    padding:30px;
     background: linear-gradient(55deg, black, #03345f, transparent);
     opacity: 0.95;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px #c0bebe;
     cursor: pointer;
+    display: block !important;
 }
-.card:hover{
+.card-body:hover{
     opacity: 1;
     background: linear-gradient(55deg, black, #03345f);
 }
 .card-row{
     /* margin: 30px; */
     opacity: 0.9;
+    display: block !important;
+    padding:20px;
+    padding-right: 20px !important;
 }
 .card-title{
     background:linear-gradient(55deg, black, darkred, transparent); 
@@ -40,4 +45,7 @@
 }
 .card-button:hover{
     opacity: 1;
+}
+.row{
+    margin: 0px;
 }

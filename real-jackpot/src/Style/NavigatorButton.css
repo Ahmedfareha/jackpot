@@ -3,12 +3,12 @@ button{
     font-weight: 400;
     display: inline;
     
-    padding-left: 20px !important;
+    padding-left: 10px !important;
     border: beige;
     cursor: pointer;
     opacity: 0.75;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.5rem !important;
 }
 button:hover{
     opacity: 1;

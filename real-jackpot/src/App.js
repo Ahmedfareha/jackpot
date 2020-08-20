@@ -25,6 +25,22 @@ const t = [
   {
     "key":0,
     "name":"Game2345",
+    "location":"Mumbai",
+    "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
+    "difficulty":"hard",
+    "loading":"PLAY"
+  },
+  {
+    "key":3,
+    "name":"Game2345",
+    "location":"Delhi",
+    "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
+    "difficulty":"hard",
+    "loading":"PLAY"
+  },
+  {
+    "key":0,
+    "name":"Game2345",
     "location":"Gaziabad",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
@@ -45,7 +61,15 @@ const t = [
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
     "loading":"PLAY"
-  }
+  },
+  {
+    "key":3,
+    "name":"Game2345",
+    "location":"Bangalore",
+    "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
+    "difficulty":"hard",
+    "loading":"PLAY"
+  },
 ]
 
 class App extends Component{
