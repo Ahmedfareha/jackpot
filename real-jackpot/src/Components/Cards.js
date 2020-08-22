@@ -21,7 +21,7 @@ const Cards = (props) => {
         const newTrail = trailArray.map(t=>{
             return (
                 <div className = "row card-row">
-                    <div className="card col-sm-4" id={t[0].key}>
+                    <div className="card col-sm-12 col-md-6 col-lg-4" id={t[0].key}>
                         {/* <img className="card-img-top" src={t.imgSqSmall.img1} alt="a" /> */}
                         <div className="card-body">
                         <h1 className="card-title">{t[0].location}</h1>
@@ -29,7 +29,7 @@ const Cards = (props) => {
                         <h2 className="card-button">{t[0].loading}</h2>
                         </div>
                     </div>
-                    <div className="card col-sm-4" id={t[1].key}>
+                    <div className="card col-sm-12 col-md-6 col-lg-4" id={t[1].key}>
                         {/* <img className="card-img-top" src={t.imgSqSmall.img1} alt="a" /> */}
                         <div className="card-body">
                         <h1 className="card-title">{t[1].location}</h1>
@@ -37,7 +37,7 @@ const Cards = (props) => {
                         <h2 className="card-button">{t[1].loading}</h2>
                         </div>
                     </div>
-                    <div className="card col-sm-4" id={t[2].key}>
+                    <div className="card col-sm-12 col-md-12 col-lg-4" id={t[2].key}>
                         {/* <img className="card-img-top" src={t.imgSqSmall.img1} alt="a" /> */}
                         <div className="card-body">
                         <h1 className="card-title">{t[2].location}</h1>

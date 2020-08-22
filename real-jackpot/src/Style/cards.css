@@ -20,8 +20,8 @@
     /* margin: 30px; */
     opacity: 0.9;
     display: block !important;
-    padding:20px;
-    padding-right: 20px !important;
+    padding-left:80px;
+    padding-right: 80px !important;
 }
 .card-title{
     background:linear-gradient(55deg, black, darkred, transparent); 

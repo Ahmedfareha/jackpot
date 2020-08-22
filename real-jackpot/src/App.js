@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import axios from 'axios'
+// import axios from 'axios'
 import './App.css';
 import Header from './Components/Header'
 import Slideshow from "./Components/Slideshow";
+import Dashboard from "./Components/Dashboard"
 import Cards from "./Components/Cards";
 import Table from "./Components/Table";
 import slide1 from "./assets/slideNo1.jpg";
@@ -100,8 +101,9 @@ class App extends Component{
               <Slideshow slides={this.state.slides} />
             </div>
         </div>
-        <Cards trails={t}></Cards>
+        <Dashboard ></Dashboard>
         <Table></Table>
+        <Cards trails={t}></Cards>
       </div>
     );
   }

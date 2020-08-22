@@ -1,0 +1,17 @@
+.title-text{
+    padding: 10px;
+    padding-left: 0px !important;
+    width: 100%;
+    margin: 10px;
+    font-size: 2rem;
+}
+.title-text h1{
+    font-weight: 800;
+    background: linear-gradient(55deg, transparent, burlywood, #033a69, transparent); 
+    opacity: 0.9;
+}
+.title-text h3{
+    font-weight: 800;
+    background: linear-gradient(55deg, #094477, #033a69, #094477); 
+    opacity: 0.9;
+}
