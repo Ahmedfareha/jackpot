@@ -26,51 +26,51 @@ const slides = [slide1, slide2, slide3, slide4, slide5];
 const t = [
   {
     "key":0,
-    "name":"Game2345",
+    "name":"Time 2345",
     "location":"Mumbai",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
-    "loading":"PLAY"
+    "loading":"Show Charts"
   },
   {
     "key":3,
-    "name":"Game2345",
+    "name":"Time 2345",
     "location":"Delhi",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
-    "loading":"PLAY"
+    "loading":"Show Charts"
   },
   {
     "key":0,
-    "name":"Game2345",
+    "name":"Time 2345",
     "location":"Gaziabad",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
-    "loading":"PLAY"
+    "loading":"Show Charts"
   },
   {
     "key":1,
-    "name":"Game3555",
+    "name":"Time 3555",
     "location":"Faridabad",
     "summary":"“Winning isn’t everything, but it beats anything that comes in second. Bam!!!!!!!!!”",
     "difficulty":"hard",
-    "loading":"PLAY"
+    "loading":"Show Charts"
   },
   {
     "key":2,
-    "name":"Game2345",
+    "name":"Time 2345",
     "location":"Moradabad",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
-    "loading":"PLAY"
+    "loading":"Show Charts"
   },
   {
     "key":3,
-    "name":"Game2345",
+    "name":"Time 2345",
     "location":"Bangalore",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
-    "loading":"PLAY"
+    "loading":"Show Charts"
   },
 ]
 

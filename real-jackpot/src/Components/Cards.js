@@ -1,50 +1,45 @@
 import React from 'react';
+import Card from './Card'
 import "../Style/cards.css"
+import Title from './Title';
 
 const Cards = (props) => {
-    console.log("TRAILS", props.trails)
-    var count;var n=3;
+    // console.log("TRAILS", props.trails)
+    var n=3, count=0;
     var flag = props.trails.length%n;
-    var size = flag?(Math.floor(props.trails.length/3)+1):(props.trails.length/3);
+    var size = flag?(Math.floor(props.trails.length/n)+1):(props.trails.length/n);
     var trailArray = new Array(size);
     var j=0;
     for(var i=0; i<trailArray.length; i++){
-        trailArray[i] = new Array(3);
-        for(var k=0;k<3;k++,j++){
+        trailArray[i] = new Array(n);
+        for(var k=0;k<n;k++,j++){
             if(j<props.trails.length)
             trailArray[i][k] = props.trails[j] 
             else break
         } 
     }
-    console.log(trailArray)
+    // console.log(trailArray)
     if(trailArray){
         const newTrail = trailArray.map(t=>{
+            if(count===0){
+                count=count+1
+                return(
+                    <div className = "row card-row">
+                        <Title title="WIN LOGS AND ANALYTICS"></Title>
+                        <Card info={t[0]}></Card>
+                        <Card info={t[1]}></Card>
+                        <Card info={t[2]}></Card>
+                    </div>
+                )
+            }
             return (
                 <div className = "row card-row">
-                    <div className="card col-sm-12 col-md-6 col-lg-4" id={t[0].key}>
-                        {/* <img className="card-img-top" src={t.imgSqSmall.img1} alt="a" /> */}
-                        <div className="card-body">
-                        <h1 className="card-title">{t[0].location}</h1>
-                        <h4 className="card-text">{t[0].name} </h4>
-                        <h2 className="card-button">{t[0].loading}</h2>
-                        </div>
-                    </div>
-                    <div className="card col-sm-12 col-md-6 col-lg-4" id={t[1].key}>
-                        {/* <img className="card-img-top" src={t.imgSqSmall.img1} alt="a" /> */}
-                        <div className="card-body">
-                        <h1 className="card-title">{t[1].location}</h1>
-                        <h4 className="card-text">{t[1].name} </h4>
-                        <h2 className="card-button">{t[1].loading}</h2>
-                        </div>
-                    </div>
-                    <div className="card col-sm-12 col-md-12 col-lg-4" id={t[2].key}>
-                        {/* <img className="card-img-top" src={t.imgSqSmall.img1} alt="a" /> */}
-                        <div className="card-body">
-                        <h1 className="card-title">{t[2].location}</h1>
-                        <h4 className="card-text">{t[2].name} </h4>
-                        <h2 className="card-button">{t[2].loading}</h2>
-                        </div>
-                    </div>
+                    <Card info={t[0]}></Card>
+                    <Card info={t[1]}></Card>
+                    <Card info={t[2]}></Card>
+                    {/* <Card info={t[3]}></Card>
+                    <Card info={t[4]}></Card>
+                    <Card info={t[5]}></Card> */}
                 </div>
             )
         })
@@ -53,31 +48,6 @@ const Cards = (props) => {
             <div style={{display:"block"}}>
                 {newTrail}
             </div>
-        )
-    }
-    if(props.trails){
-        const trail= props.trails.map(t => {
-            count=count+1;
-            console.log(count)
-            // console.log(trail)
-        return(
-            <div className = "row">
-            <div className="card col-sm-12" id={t.key}>
-                {/* <img className="card-img-top" src={t.imgSqSmall.img1} alt="a" /> */}
-                <div className="card-body">
-                    <h1 className="card-title">{t.location}</h1>
-                    <h4 className="card-text">{t.name} </h4>
-                    <h2 className="card-button">{t.loading}</h2>
-                </div>
-            </div>
-            </div>
-        )
-        })
-        return(
-        // <div className = "row card-row">
-        <div>
-            {trail}
-        </div>
         )
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from "./Title"
-import Card from "./Card"
+import Card from "./dashCard"
 
 const Dashboard = () => {
     var today = new Date(),

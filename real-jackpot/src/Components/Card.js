@@ -1,31 +1,19 @@
-import React from 'react';
-import "../Style/card.css"
+import React from 'react'
+import "../Style/cards.css"
 
 const Card = (props) => {
-    if(props.status==='updated'){
-        return(
-            <div className="dashboard-card">
-                <div className="dashbaord-card-title">
-                    <h4>{props.region}</h4>
-                </div>
-                <div className="dashboard-card-status">
-                    <div className="false-loader">
-                    <h1>{props.number}</h1>
-                    </div>
-                </div>
+    console.log(props.info)
+    return (
+        <div className="card col-sm-6 col-md-6 col-lg-4" id={props.info.key}>
+            <div className="card-body">
+            <h4 className="card-title">{props.info.location}</h4>
+            <h1 className="card-text">{props.info.name} </h1>
+            <div className="card-text win-number">
+                update
+                <div className="left"><h2>022</h2></div>
+                <div className="right"><h2>780</h2></div>
             </div>
-        )
-    }
-    return(
-        <div className="dashboard-card">
-            <div className="dashbaord-card-title">
-                <h4>{props.region}</h4>
-            </div>
-            <div className="dashboard-card-status">
-                <div className="loader">
-                <h1>7</h1>
-                {/* <h1><div class="loader"></div></h1> */}
-                </div>
+            <h4 className="card-button">{props.info.loading}</h4>
             </div>
         </div>
     )
