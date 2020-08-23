@@ -4,8 +4,7 @@ import Card from "./Card"
 
 const Dashboard = () => {
     var today = new Date(),
-            date =  today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()+' '+today.getHours()+":"+today.getMinutes()+":"+today.getMilliseconds()+' '+(today.getHours()>=12?'PM':'AM');
-    console.log(date)
+            date =  today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()+' '+today.getHours()+":"+today.getMinutes()+":"+today.getSeconds()+' '+(today.getHours()>=12?'PM':'AM');
     
     return(
         <div className="row dashboard">
