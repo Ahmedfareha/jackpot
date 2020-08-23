@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Components/Header'
 import Slideshow from "./Components/Slideshow";
 import Dashboard from "./Components/Dashboard"
+import Marquee from './Components/Marquee';
 import Cards from "./Components/Cards";
 import Table from "./Components/Table";
 import slide1 from "./assets/slideNo1.jpg";
@@ -101,7 +102,12 @@ class App extends Component{
               <Slideshow slides={this.state.slides} />
             </div>
         </div>
+        <br/><br/>
+        <br/>
+        <Marquee></Marquee>
         <Dashboard ></Dashboard>
+        <Marquee></Marquee>
+        <br/><br/><br/>
         <Table></Table>
         <Cards trails={t}></Cards>
       </div>

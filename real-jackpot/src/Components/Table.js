@@ -5,7 +5,13 @@ import "../Style/table.css"
 const table = () => {
     var today = new Date(),
     date = today.getDate();
-    var   month = today.getMonth();
+    var months = ['January','February','March','April','May','June','July','August','September','October','November','December']
+    var monthsShort = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec']
+    var monthNumber = today.getMonth();
+    var month = months[monthNumber]
+    var monthShort = monthsShort[monthNumber]
+    console.log(month)
+
         return(
             <div className="row">
             <div className="row col-sm-12 region-table">
@@ -13,28 +19,28 @@ const table = () => {
                     <Title title="RECENT RESULTS"></Title>
                     <div className="table-responsive col-lg-12">
                         <div className="table">
-                            <thead style={{backgroundColor:"darkred"}}><tr><th>AUGUST</th>
+                            <thead style={{backgroundColor:"darkred"}}><tr><th>{month}</th>
                             <th></th>   <th></th>   <th></th>   
                             <th></th>   <th></th>   <th></th>   
                             <th></th>   <th></th>   <th></th>   </tr></thead>
                             <thead>
                                 <tr>
-                                    <th  >S.No.</th>
-                                    <th style={{width:"30%"}}>Region</th>
-                                    <th style={{width:"10%"}}>{date}</th>
-                                    <th style={{width:"10%"}}>{date-1}</th>
-                                    <th style={{width:"10%"}}>{date-2}</th>
-                                    <th style={{width:"10%"}}>{date-3}</th>
-                                    <th style={{width:"10%"}}>{date-4}</th>
-                                    <th style={{width:"10%"}}>{date-5}</th>
-                                    <th style={{width:"10%"}}>{date-6}</th>
-                                    <th style={{width:"10%"}}>{date-7}</th>
+                                    <th></th>
+                                    <th style={{width:"20%"}}>Region</th>
+                                    <th style={{width:"10%"}}>{date} {monthShort}</th>
+                                    <th style={{width:"10%"}}>{date-1} {monthShort}</th>
+                                    <th style={{width:"10%"}}>{date-2} {monthShort}</th>
+                                    <th style={{width:"10%"}}>{date-3} {monthShort}</th>
+                                    <th style={{width:"10%"}}>{date-4} {monthShort}</th>
+                                    <th style={{width:"10%"}}>{date-5} {monthShort}</th>
+                                    <th style={{width:"10%"}}>{date-6} {monthShort}</th>
+                                    <th style={{width:"10%"}}>{date-6} {monthShort}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td  >1</td>
-                                    <td style={{width:"30%"}}>Mumbai</td>
+                                    <td></td>
+                                    <td style={{width:"20%"}}>Mumbai</td>
                                     <td style={{width:"10%"}}>{date}</td>
                                     <td style={{width:"10%"}}>{date-1}</td>
                                     <td style={{width:"10%"}}>{date-2}</td>
@@ -45,8 +51,8 @@ const table = () => {
                                     <td style={{width:"10%"}}>{date-3}</td>
                                 </tr>
                                 <tr>
-                                    <td  >2</td>
-                                    <td style={{width:"30%"}}>Delhi</td>
+                                    <td></td>
+                                    <td style={{width:"20%"}}>Delhi</td>
                                     <td style={{width:"10%"}}>{date}</td>
                                     <td style={{width:"10%"}}>{date-1}</td>
                                     <td style={{width:"10%"}}>{date-2}</td>
@@ -57,8 +63,8 @@ const table = () => {
                                     <td style={{width:"10%"}}>{date-3}</td>
                                 </tr>
                                 <tr>
-                                    <td >3</td>
-                                    <td style={{width:"30%"}}>Ghaziabad</td>
+                                    <td></td>
+                                    <td style={{width:"20%"}}>Ghaziabad</td>
                                     <td style={{width:"10%"}}>{date}</td>
                                     <td style={{width:"10%"}}>{date-1}</td>
                                     <td style={{width:"10%"}}>{date-2}</td>
@@ -69,8 +75,8 @@ const table = () => {
                                     <td style={{width:"10%"}}>{date-3}</td>
                                 </tr>
                                 <tr>
-                                    <td  >4</td>
-                                    <td style={{width:"30%"}}>Chennai</td>
+                                    <td></td>
+                                    <td style={{width:"20%"}}>Chennai</td>
                                     <td style={{width:"10%"}}>{date}</td>
                                     <td style={{width:"10%"}}>{date-1}</td>
                                     <td style={{width:"10%"}}>{date-2}</td>
@@ -81,8 +87,8 @@ const table = () => {
                                     <td style={{width:"10%"}}>{date-3}</td>
                                 </tr>
                                 <tr>
-                                    <td  >5</td>
-                                    <td style={{width:"30%"}}>Bangalore</td>
+                                    <td></td>
+                                    <td style={{width:"20%"}}>Bangalore</td>
                                     <td style={{width:"10%"}}>{date}</td>
                                     <td style={{width:"10%"}}>{date-1}</td>
                                     <td style={{width:"10%"}}>{date-2}</td>
@@ -93,8 +99,8 @@ const table = () => {
                                     <td style={{width:"10%"}}>{date-3}</td>
                                 </tr>
                                 <tr>
-                                    <td  >6</td>
-                                    <td style={{width:"30%"}}>Hyderabad</td>
+                                    <td></td>
+                                    <td style={{width:"20%"}}>Hyderabad</td>
                                     <td style={{width:"10%"}}>{date}</td>
                                     <td style={{width:"10%"}}>{date-1}</td>
                                     <td style={{width:"10%"}}>{date-2}</td>

@@ -1,19 +1,22 @@
 .region-table{
-    background-color: burlywood;
+    background-color:rgb(214, 172, 117);
+    /* background:linear-gradient(55deg, transparent, burlywood, transparent);  */
+    
 }.table-box{
     padding: 80px!important;
 }
 .table{
-    background-color: #033a69;
+    /* background-color: #033a69; */
 }
 th {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 thead{
     font-size: 2.5rem;
 }
 td{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 tbody tr:hover{
     background-color: #5f6e94;
