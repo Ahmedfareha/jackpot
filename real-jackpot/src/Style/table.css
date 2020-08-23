@@ -1,12 +1,16 @@
 .region-table{
-    background-color:rgb(214, 172, 117);
+    /* background-color:rgb(214, 172, 117); */
     /* background:linear-gradient(55deg, transparent, burlywood, transparent);  */
     
-}.table-box{
+}
+.table-box{
     padding: 80px!important;
 }
+.table-responsive{
+    border-color: white;
+}
 .table{
-    /* background-color: #033a69; */
+    background-color: #033a69;
 }
 th {
     font-size: 2rem;
@@ -50,10 +54,8 @@ tbody tr:hover{
     }
     th{
         font-size: 0.5rem;
-        /* padding: 0px !important; */
     }
     td{
-        font-size: 0.5rem;
-        /* padding: 0px!important; */
+        font-size: 0.4rem;
     }
   }
