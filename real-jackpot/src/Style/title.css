@@ -1,6 +1,6 @@
 .title-text{
     padding: 10px;
-    /* padding-left: 0px !important; */
+    padding-left: 0px !important;
     width: 100%;
     margin: 10px;
     font-size: 2rem;
@@ -14,4 +14,13 @@
     font-weight: 800;
     background: linear-gradient(55deg, #094477, #033a69, #094477); 
     opacity: 0.9;
+}
+@media (max-width: 990px){
+    .title-text{
+        padding: 10px;
+        padding-left: 10px !important;
+        width: 100%;
+        margin: 10px;
+        font-size: 2rem;
+    }
 }

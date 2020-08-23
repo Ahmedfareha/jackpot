@@ -25,7 +25,7 @@ const table = () => {
                             <th></th>   <th></th>   <th></th>   </tr></thead>
                             <thead>
                                 <tr>
-                                    <th></th>
+                                    
                                     <th style={{width:"20%"}}>Region</th>
                                     <th style={{width:"10%"}}>{date} {monthShort}</th>
                                     <th style={{width:"10%"}}>{date-1} {monthShort}</th>
@@ -35,11 +35,12 @@ const table = () => {
                                     <th style={{width:"10%"}}>{date-5} {monthShort}</th>
                                     <th style={{width:"10%"}}>{date-6} {monthShort}</th>
                                     <th style={{width:"10%"}}>{date-6} {monthShort}</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td></td>
+                                    
                                     <td style={{width:"20%"}}>Mumbai</td>
                                     <td style={{width:"10%"}}>{date}</td>
                                     <td style={{width:"10%"}}>{date-1}</td>
@@ -49,9 +50,9 @@ const table = () => {
                                     <td style={{width:"10%"}}>{date-2}</td>
                                     <td style={{width:"10%"}}>{date-3}</td>
                                     <td style={{width:"10%"}}>{date-3}</td>
-                                </tr>
+                                    <td></td></tr>
                                 <tr>
-                                    <td></td>
+                                    {/* <td></td> */}
                                     <td style={{width:"20%"}}>Delhi</td>
                                     <td style={{width:"10%"}}>{date}</td>
                                     <td style={{width:"10%"}}>{date-1}</td>
@@ -61,9 +62,10 @@ const table = () => {
                                     <td style={{width:"10%"}}>{date-2}</td>
                                     <td style={{width:"10%"}}>{date-3}</td>
                                     <td style={{width:"10%"}}>{date-3}</td>
-                                </tr>
-                                <tr>
                                     <td></td>
+                                    </tr>
+                                <tr>
+                                    {/* <td></td> */}
                                     <td style={{width:"20%"}}>Ghaziabad</td>
                                     <td style={{width:"10%"}}>{date}</td>
                                     <td style={{width:"10%"}}>{date-1}</td>
@@ -73,8 +75,9 @@ const table = () => {
                                     <td style={{width:"10%"}}>{date-2}</td>
                                     <td style={{width:"10%"}}>{date-3}</td>
                                     <td style={{width:"10%"}}>{date-3}</td>
-                                </tr>
-                                <tr>
+                                    <td></td>
+                                    </tr>
+                                {/* <tr>
                                     <td></td>
                                     <td style={{width:"20%"}}>Chennai</td>
                                     <td style={{width:"10%"}}>{date}</td>
@@ -109,7 +112,7 @@ const table = () => {
                                     <td style={{width:"10%"}}>{date-2}</td>
                                     <td style={{width:"10%"}}>{date-3}</td>
                                     <td style={{width:"10%"}}>{date-3}</td>
-                                </tr>
+                                </tr> */}
 
                             </tbody>
                         </div>
