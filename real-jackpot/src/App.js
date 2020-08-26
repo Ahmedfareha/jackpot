@@ -7,6 +7,7 @@ import Dashboard from "./Components/Dashboard"
 import Marquee from './Components/Marquee';
 import Cards from "./Components/Cards";
 import Table from "./Components/Table";
+import Footer from "./Components/Footer"
 import slide1 from "./assets/slideNo1.jpg";
 import slide2 from "./assets/slideNo2.jpg";
 import slide3 from "./assets/slideNo3.jpg";
@@ -131,6 +132,7 @@ class App extends Component{
         <br/><br/><br/>
         <Table></Table>
         <Cards trails={t}></Cards>
+        <Footer></Footer>
       </div>
     );
   }
