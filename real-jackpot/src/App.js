@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import axios from 'axios'
+import axios from 'axios'
 import './App.css';
 import Header from './Components/Header'
 import Slideshow from "./Components/Slideshow";
@@ -75,22 +75,44 @@ const t = [
 ]
 
 class App extends Component{
+  
   state = {
-    slides: slides
+    slides: slides,
+    dashboardData: [6],
   }
 
-  componentDidMount(){
-    const axios = require('axios');
+  // openChart = this.openChart.bind(this);
+
+  componentDidMount = () =>{
+    // const axios = require('axios');
     axios({
       method:'post',
       url:'http://13.59.47.18:8081/home/getDataByRegion?region=ghaziabad',
       responseType:'application/json'
     })
-    .then(function(res){
-      console.log(res);
-      // alert(res)
-    } )
-  }
+    .then((res)=>{
+      // console.log(res);
+    })
+
+    axios({
+      method:'get',
+      url:'http://13.59.47.18:8081/home/getLiveData',
+      responseType:'application/json'
+    })
+    .then((res)=>{
+      // console.log(res)
+      this.setState({
+        dashboardData: [res.data.Data]
+      })
+    })
+  } 
+
+  // openChart(){
+  //   // your axios call here
+  //  localStorage.setItem("pageData", "Data Retrieved from axios request")
+  //  // route to new page by changing window.location
+  //  window.open("http://13.59.47.18/Charts", "_blank") //to open new page        
+  // }
 
   render(){
     return (
@@ -102,10 +124,9 @@ class App extends Component{
               <Slideshow slides={this.state.slides} />
             </div>
         </div>
-        <br/><br/>
-        <br/>
+        <br/><br/><br/>
         <Marquee></Marquee>
-        <Dashboard ></Dashboard>
+        <Dashboard dashboardData={this.state.dashboardData}></Dashboard>
         <Marquee></Marquee>
         <br/><br/><br/>
         <Table></Table>

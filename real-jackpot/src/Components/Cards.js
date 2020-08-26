@@ -43,7 +43,7 @@ const Cards = (props) => {
                 </div>
             )
         })
-        console.log(newTrail)
+        // console.log(newTrail)
         return(
             <div style={{display:"block"}}>
                 {newTrail}

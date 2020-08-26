@@ -3,7 +3,7 @@ import Title from "./Title"
 import Row from "./Row"
 import "../Style/table.css"
 
-const table = () => {
+const table = (props) => {
     var today = new Date(),
     date = today.getDate();
     var months = ['January','February','March','April','May','June','July','August','September','October','November','December']
@@ -22,9 +22,9 @@ const table = () => {
                     <div className="table">
                         <thead style={{backgroundColor:"darkred"}}>
                             <tr><th>{month}</th>
-                            <th></th>   <th></th>   <th></th>   
-                            <th></th>   <th></th>   <th></th>   
-                            <th></th>   <th></th>   <th></th>   </tr>
+                            <th></th><th></th><th></th>   
+                            <th></th><th></th><th></th>   
+                            <th></th><th></th><th></th>   </tr>
                         </thead>
                         <thead>
                             <tr>

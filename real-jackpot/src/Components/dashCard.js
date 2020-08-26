@@ -2,7 +2,8 @@ import React from 'react';
 import "../Style/card.css"
 
 const dashCard = (props) => {
-    if(props.status==='updated'){
+    // console.log(props)
+    if(props.status==='update'){
         return(
             <div className="dashboard-card">
                 <div className="dashbaord-card-title">

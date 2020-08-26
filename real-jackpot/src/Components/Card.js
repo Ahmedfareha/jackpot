@@ -2,7 +2,7 @@ import React from 'react'
 import "../Style/cards.css"
 
 const Card = (props) => {
-    console.log(props.info)
+
     return (
         <div className="card col-sm-6 col-md-6 col-lg-4" id={props.info.key}>
             <div className="card-body">

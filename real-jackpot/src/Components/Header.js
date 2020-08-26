@@ -9,7 +9,7 @@ const header = () => {
             <nav>                
                 <div className="row nav">
                     <div className="col-sm-2">
-                        <div class="box small">
+                        <div className="box small">
                             <img src={menu} alt="Cloudy Sky"></img>
                         </div>
                         {/* <img style={{height:"50%", width:"50%", padding:"0px", cursor:"pointer",}} src={menu} alt="boohoo" className="img-responsive"/> */}
