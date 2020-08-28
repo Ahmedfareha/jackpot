@@ -11,13 +11,16 @@ const Dashboard = (props) => {
     if(d[0][0]!=undefined){
         var dashboardCards = new Array(d.length)
         for(var i=0; i<d[0].length; i++){
-            dashboardCards[i] = new Array(3)
+            if(d[0][i].status=='update'||d[0][i].status=='wait'){
+                dashboardCards[i] = new Array(3)
             if(d[0][i].region!=undefined)
                 dashboardCards[i][0] = d[0][i].region
             if(d[0][i].status!=undefined)
                 dashboardCards[i][1] = d[0][i].status
             if(d[0][i].luckyNo!=undefined)
-                dashboardCards[i][2] = d[0][i].luckyNo     
+                dashboardCards[i][2] = d[0][i].luckyNo 
+            }
+
             // console.log(dashboardCards[i])
         }
         // console.log(dashboardCards)

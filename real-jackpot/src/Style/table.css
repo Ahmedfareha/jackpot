@@ -27,7 +27,7 @@ tbody tr:hover{
     background-color: #5f6e94;
     font-weight: 800;
 }
-@media (max-width: 833px) {
+@media (max-width: 920px) {
     .table-box{
         padding: 0px !important;
     }
