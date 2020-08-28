@@ -126,8 +126,8 @@ class App extends Component{
     // your axios call here
   //  localStorage.setItem("pageData", "Data Retrieved from axios request")
    // route to new page by changing window.location
-  //  window.open("http://13.59.47.18/Charts", "_blank") //to open new page 
-   window.open("http://localhost:3000/charts", "blank")       
+   window.open("http://13.59.47.18/Charts", "_blank") //to open new page 
+  //  window.open("http://localhost:3000/charts", "blank")       
   }
 
   render(){
