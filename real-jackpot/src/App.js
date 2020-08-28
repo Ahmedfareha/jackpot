@@ -80,9 +80,10 @@ class App extends Component{
   state = {
     slides: slides,
     dashboardData: [6],
+    tableData: [6]
   }
 
-  // openChart = this.openChart.bind(this);
+  //  openChart = this.openChart.bind(this);
 
   componentDidMount = () =>{
     // const axios = require('axios');
@@ -106,14 +107,28 @@ class App extends Component{
         dashboardData: [res.data.Data]
       })
     })
+
+    axios({
+      method:'get',
+      url:'http://13.59.47.18:8081/home/getHomeTableData',
+      responseType: 'application/json'
+    })
+    .then((res)=>{
+      // console.log(res.data.Data)
+      this.setState({
+        tableData: res.data.Data
+      })
+    })
   } 
 
-  // openChart(){
-  //   // your axios call here
+  openChart = () =>{
+    console.log("clicked")
+    // your axios call here
   //  localStorage.setItem("pageData", "Data Retrieved from axios request")
-  //  // route to new page by changing window.location
-  //  window.open("http://13.59.47.18/Charts", "_blank") //to open new page        
-  // }
+   // route to new page by changing window.location
+  //  window.open("http://13.59.47.18/Charts", "_blank") //to open new page 
+   window.open("http://localhost:3000/charts", "blank")       
+  }
 
   render(){
     return (
@@ -130,8 +145,8 @@ class App extends Component{
         <Dashboard dashboardData={this.state.dashboardData}></Dashboard>
         <Marquee></Marquee>
         <br/><br/><br/>
-        <Table></Table>
-        <Cards trails={t}></Cards>
+        <Table tableData = {this.state.tableData}></Table>
+        <Cards trails={t} click={this.openChart}></Cards>
         <Footer></Footer>
       </div>
     );

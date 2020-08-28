@@ -26,17 +26,17 @@ const Cards = (props) => {
                 return(
                     <div className = "row card-row">
                         <Title title="WIN LOGS AND ANALYTICS"></Title>
-                        <Card info={t[0]}></Card>
-                        <Card info={t[1]}></Card>
-                        <Card info={t[2]}></Card>
+                        <Card info={t[0]} click={props.click}></Card>
+                        <Card info={t[1]} click={props.click}></Card>
+                        <Card info={t[2]} click={props.click}></Card>
                     </div>
                 )
             }
             return (
                 <div className = "row card-row">
-                    <Card info={t[0]}></Card>
-                    <Card info={t[1]}></Card>
-                    <Card info={t[2]}></Card>
+                    <Card info={t[0]} click={props.click}></Card>
+                    <Card info={t[1]} click={props.click}></Card>
+                    <Card info={t[2]} click={props.click}></Card>
                     {/* <Card info={t[3]}></Card>
                     <Card info={t[4]}></Card>
                     <Card info={t[5]}></Card> */}

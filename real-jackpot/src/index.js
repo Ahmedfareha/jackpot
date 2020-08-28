@@ -1,14 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 import App from './App';
+import Charts from "./Components/Charts"
 import * as serviceWorker from './serviceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(
-  <React.StrictMode>
+const routing = (
+  <Router>
+    <div>
+      <Route exact path="/" component={App}></Route>
+      <Route path="/charts" component={Charts}></Route>
+    </div>
+  </Router>
+)
+
+{/* <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode> */}
+
+ReactDOM.render(
+  routing,
   document.getElementById('root')
 );
 

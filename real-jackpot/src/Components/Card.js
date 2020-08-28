@@ -2,7 +2,6 @@ import React from 'react'
 import "../Style/cards.css"
 
 const Card = (props) => {
-
     return (
         <div className="card col-sm-6 col-md-6 col-lg-4" id={props.info.key}>
             <div className="card-body">
@@ -13,7 +12,7 @@ const Card = (props) => {
                 <div className="left"><h2>022</h2></div>
                 <div className="right"><h2>780</h2></div>
             </div>
-            <h4 className="card-button">{props.info.loading}</h4>
+            <h4 className="card-button" onClick={props.click}>{props.info.loading}</h4>
             </div>
         </div>
     )
