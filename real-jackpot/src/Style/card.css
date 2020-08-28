@@ -12,8 +12,12 @@
     margin-bottom:30px !important
 }
 .dashbaord-card-title{
-    background:linear-gradient(55deg, black, burlywood, transparent); 
-    opacity: 0.8;
+    /* background:linear-gradient(55deg, black, burlywood);  */
+    /* background-color: #03345f; */
+    background: linear-gradient(55deg, rgb(31, 29, 29), #03345f);
+    
+    border-radius: 2px;
+    opacity: 0.9;
     min-width: 100px;
 }
 .dashboard-card-status{
@@ -54,7 +58,7 @@
 .false-loader h1{
     font-weight: 700;
     font-size: 4rem !important;
-    background: linear-gradient(55deg, black, #03345f, transparent);
+    background: linear-gradient(55deg, rgb(14, 13, 13), #03345f);
     border-radius: 5px;
 }
 .loader h1{
