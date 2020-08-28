@@ -26,12 +26,12 @@ const table = (props) => {
                     <Title title="RECENT RESULTS"></Title>
                     <div className="table-responsive col-lg-12">
                         <div className="table">
-                            <thead style={{backgroundColor:"burlywood"}}>
+                            {/* <thead style={{backgroundColor:"burlywood"}}>
                                 <tr><th>{month}</th>
                                 <th></th><th></th><th></th>
                                 <th></th><th></th><th></th>
                                 <th></th><th></th><th></th><th></th><th></th></tr>
-                            </thead>
+                            </thead> */}
                             <thead>
                                 <tr>
                                     <th style={{width:"20%"}}>Region</th>

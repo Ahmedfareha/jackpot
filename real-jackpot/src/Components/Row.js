@@ -14,13 +14,13 @@ const Row = (props) => {
         // console.log(trails)
 
         return(
-            <tr><td style={{width:"20%"}}>{props.region}</td>
+            <tr><td style={{textTransform: "capitalize",width:"20%"}}>{props.region}</td>
             {trails}<td></td></tr>
         )
     }
 
     return (
-        <tr><td style={{width:"20%"}}>{props.region}</td>
+        <tr><td style={{textTransform: "capitalize",width:"20%"}}>{props.region}</td>
             <td style={{width:"10%"}}>0{date}</td>
             <td style={{width:"10%"}}>0{date-1}</td>
             <td style={{width:"10%"}}>0{date-2}</td>

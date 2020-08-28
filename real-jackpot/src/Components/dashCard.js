@@ -7,7 +7,7 @@ const dashCard = (props) => {
         return(
             <div className="dashboard-card">
                 <div className="dashbaord-card-title">
-                    <h3>{props.region}</h3>
+                    <h2 style={{textTransform: "capitalize"}}>{props.region}</h2>
                 </div>
                 <div className="dashboard-card-status">
                     <div className="false-loader">
@@ -20,7 +20,7 @@ const dashCard = (props) => {
     return(
         <div className="dashboard-card">
             <div className="dashbaord-card-title">
-                <h3>{props.region}</h3>
+                <h2 style={{textTransform: "capitalize"}}>{props.region}</h2>
             </div>
             <div className="dashboard-card-status">
                 <div className="loader">
