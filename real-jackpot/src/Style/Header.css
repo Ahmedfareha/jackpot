@@ -1,9 +1,9 @@
 .nav{
-    background: linear-gradient(75deg, rgb(27, 27, 27), rgb(97, 94, 94));
-    opacity: 0.95;
+    background: linear-gradient(75deg, rgb(29, 28, 28), rgb(63, 61, 61));
+    /* opacity: 0.95; */
 }
 .img-responsive{
-    border-radius: 100px;
+    border-radius: 120px;
 }
 .row{
     margin: 0px !important;

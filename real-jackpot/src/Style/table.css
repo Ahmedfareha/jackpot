@@ -11,6 +11,7 @@
 }
 .table{
     background-color: #033a69;
+    opacity: 0.95;
 }
 th {
     font-size: 2rem;

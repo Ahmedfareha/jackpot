@@ -26,7 +26,7 @@ const table = (props) => {
                     <Title title="RECENT RESULTS"></Title>
                     <div className="table-responsive col-lg-12">
                         <div className="table">
-                            <thead style={{backgroundColor:"darkred"}}>
+                            <thead style={{backgroundColor:"burlywood"}}>
                                 <tr><th>{month}</th>
                                 <th></th><th></th><th></th>
                                 <th></th><th></th><th></th>

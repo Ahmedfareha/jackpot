@@ -5,7 +5,8 @@
 }
 .card-body{
     padding:30px;
-    background: linear-gradient(55deg, black, #03345f, transparent);
+    /* background: linear-gradient(55deg, black, #03345f, transparent); */
+    background-color:#03345f ;
     opacity: 0.95;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px #c0bebe;
@@ -24,7 +25,7 @@
     padding-right: 80px !important;
 }
 .card-title{
-    background:linear-gradient(55deg, black, darkred, transparent); 
+    background:linear-gradient(55deg, black, burlywood); 
     border-radius: 5px;
     font-weight: 600;
     padding: 10px;
@@ -35,7 +36,7 @@
     margin: 30px;
 }
 .card-button{
-    background-color: darkgoldenrod;
+    background-color: burlywood;
     font-weight: 700;
     font-display: block;
     padding: 10px;

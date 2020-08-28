@@ -2,13 +2,12 @@ button{
     background-color: transparent;
     font-weight: 400;
     display: inline;
-    
     padding-left: 10px !important;
     border: beige;
     cursor: pointer;
-    opacity: 0.75;
+    opacity: 0.85;
     font-weight: 400;
-    font-size: 1.5rem !important;
+    font-size: 1.6rem !important;
 }
 button:hover{
     opacity: 1;
