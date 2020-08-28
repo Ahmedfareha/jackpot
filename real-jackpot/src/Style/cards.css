@@ -80,6 +80,36 @@
         margin: 10px;
     }
 }
+@media (max-width:450px){
+    .card{
+        padding:10px;
+        display: inline-block !important;
+        border: none !important;
+    }
+    .card-body{
+        padding:10px;
+        display: block !important;
+    }
+    .card-row{
+        display: block !important;
+        padding-left:60px;
+        padding-right: 70px !important;
+    }
+    .card-title{
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    .card-text{
+        margin: 15px;
+        font-size: 1.5rem;
+    }
+    .card-button{
+        font-display: block;
+        padding: 10px;
+        margin: 0px;
+        font-size: 1.2rem;
+    }
+}
 .left{
     position: relative;
     float: left;

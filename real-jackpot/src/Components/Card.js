@@ -3,7 +3,7 @@ import "../Style/cards.css"
 
 const Card = (props) => {
     return (
-        <div className="card col-sm-6 col-md-6 col-lg-4" id={props.info.key}>
+        <div className="card col-sm-12 col-md-6 col-lg-4" id={props.info.key}>
             <div className="card-body">
             <h4 className="card-title">{props.info.location}</h4>
             <h1 className="card-text">{props.info.name} </h1>
