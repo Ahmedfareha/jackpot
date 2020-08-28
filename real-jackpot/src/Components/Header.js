@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Style/Header.css'
 import NavigatorButton from './NavigatorButton';
-import menu from "../assets/menu_emoji_new.jpg"
+import menu from "../assets/menu_emoji_n.jpg"
 
 const header = () => {
     return(

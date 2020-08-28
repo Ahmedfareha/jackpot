@@ -3,7 +3,7 @@
     /* opacity: 0.95; */
 }
 .img-responsive{
-    border-radius: 120px;
+    border-radius: 1px;
 }
 .row{
     margin: 0px !important;
@@ -12,7 +12,7 @@
     height: 100%;
     widows: 100%;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 1px;
 }
 .box.small{
     height: 60px;
