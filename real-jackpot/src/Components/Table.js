@@ -12,11 +12,52 @@ const table = (props) => {
     var month = months[monthNumber]
     var monthShort = monthsShort[monthNumber]
 
-    const trails = props.tableData.map(t=>{
+    if(props.tableData!=undefined){
+        const trails = props.tableData.map(t=>{
+            return(
+                <Row region={t.region} top10LuckyNo={t.top_10_lucky_no}></Row>
+            )
+        })
+    
         return(
-            <Row region={t.region} top10LuckyNo={t.top_10_lucky_no}></Row>
-        )
-    })
+            <div className="row">
+            <div className="row col-sm-12 region-table">
+                <div className="table-box" style={{width:"100%"}}>
+                    <Title title="RECENT RESULTS"></Title>
+                    <div className="table-responsive col-lg-12">
+                        <div className="table">
+                            <thead style={{backgroundColor:"darkred"}}>
+                                <tr><th>{month}</th>
+                                <th></th><th></th><th></th>
+                                <th></th><th></th><th></th>
+                                <th></th><th></th><th></th><th></th><th></th></tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th style={{width:"20%"}}>Region</th>
+                                    <th style={{width:"8%"}}>{date} {monthShort}</th>
+                                    <th style={{width:"8%"}}>{date-1} {monthShort}</th>
+                                    <th style={{width:"8%"}}>{date-2} {monthShort}</th>
+                                    <th style={{width:"8%"}}>{date-3} {monthShort}</th>
+                                    <th style={{width:"8%"}}>{date-4} {monthShort}</th>
+                                    <th style={{width:"8%"}}>{date-5} {monthShort}</th>
+                                    <th style={{width:"8%"}}>{date-6} {monthShort}</th>
+                                    <th style={{width:"8%"}}>{date-7} {monthShort}</th>
+                                    <th style={{width:"8%"}}>{date-8} {monthShort}</th>
+                                    <th style={{width:"8%"}}>{date-9} {monthShort}</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {trails}
+                            </tbody>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        )    
+    }
 
     return(
         <div className="row">
@@ -48,7 +89,7 @@ const table = (props) => {
                             </tr>
                         </thead>
                         <tbody>
-                            {trails}
+                            LOADING.....
                         </tbody>
                     </div>
                 </div>
