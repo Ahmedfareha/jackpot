@@ -4,7 +4,7 @@
     width: 100%;
     font-size: 2rem;
 }
-.title-text h1{
+.title-text b{
     font-weight: 800;
     /* background: linear-gradient(55deg, #033a69, burlywood, #033a69);  */
     color: black;
@@ -12,6 +12,9 @@
     opacity: 0.9;
     padding-left: 30px;
     padding-top: 30px;
+}
+.title-text h1{
+    text-align: left;
 }
 .title-text h3{
     font-weight: 800;
@@ -31,7 +34,7 @@ hr{
         padding: 10px;
         /* padding-left: 0px !important; */
     }
-    .title-text h1{
+    .title-text b{
         font-weight: 800;
         /* background: linear-gradient(55deg, #033a69, burlywood, #033a69);  */
         padding-left: 10px;

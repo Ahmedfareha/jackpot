@@ -8,6 +8,7 @@ import Dashboard from "./Components/Dashboard"
 import Marquee from './Components/Marquee';
 import Cards from "./Components/Cards";
 import Table from "./Components/Table";
+import AboutUs from "./Components/AboutUs"
 import Footer from "./Components/Footer"
 import slide1 from "./assets/slideNo1.jpg";
 import slide2 from "./assets/slideNo2.jpg";
@@ -156,6 +157,7 @@ class App extends Component{
         <br></br>
         <Title title="WIN LOGS AND ANALYTICS"></Title>
         <Cards trails={t} click={this.openChart}></Cards>
+        <AboutUs></AboutUs>
         <Footer></Footer>
       </div>
     );
