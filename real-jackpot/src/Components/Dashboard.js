@@ -32,7 +32,6 @@ const Dashboard = (props) => {
             // console.log(trails)
             return(
                 <div className="row dashboard">
-                    <Title title="LIVE UPDATES" subtitle={date}></Title>
                     <div className="row dashboard">
                         {trails}
                     </div>
@@ -41,10 +40,14 @@ const Dashboard = (props) => {
         }
     }
 
+    else{
+        console.log("dashboard else")
+    }
+    console.log("here")
     return(
         <div className="row dashboard">
             <div className="row dashboard">
-                    <h1><b  style={{color:"black"}}>LOADING......</b></h1>
+                    <h2><b  style={{color:"black"}}>LOADING......</b></h2>
             {/* <Card region="Delhi" status="updated" number="007"></Card>
             <Card region="Mumbai" status="not updated"></Card>
             <Card region="Ghaziabad" status="updated" number="723"></Card>

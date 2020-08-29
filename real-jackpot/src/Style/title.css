@@ -1,26 +1,49 @@
 .title-text{
     padding: 10px;
-    padding-left: 0px !important;
+    /* padding-left: 0px !important; */
     width: 100%;
-    margin: 10px;
     font-size: 2rem;
 }
 .title-text h1{
     font-weight: 800;
-    background: linear-gradient(55deg, #033a69, burlywood, #033a69); 
+    /* background: linear-gradient(55deg, #033a69, burlywood, #033a69);  */
+    color: black;
+    text-align: left;
     opacity: 0.9;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 .title-text h3{
     font-weight: 800;
-    background: linear-gradient(55deg, #094477, #033a69, #094477); 
+    /* background: linear-gradient(55deg, #094477, #033a69, #094477);  */
+    color: black;
     opacity: 0.9;
+    text-align: left;
+    padding-left: 30px;
+}
+hr{
+    background-color: burlywood;
+    padding: 1px;
+    margin-left: 30px!important;
 }
 @media (max-width: 990px){
     .title-text{
         padding: 10px;
-        padding-left: 10px !important;
-        width: 100%;
-        margin: 10px;
-        font-size: 2rem;
+        /* padding-left: 0px !important; */
+    }
+    .title-text h1{
+        font-weight: 800;
+        /* background: linear-gradient(55deg, #033a69, burlywood, #033a69);  */
+        padding-left: 10px;
+        padding-top: 15px;
+        font-size: 1.6rem;
+    }
+    .title-text h3{
+        padding-left: 10px;
+        font-size: 1.6rem;
+    }
+    hr{
+        padding: 0.5px;
+        margin-left: 10px!important;
     }
 }

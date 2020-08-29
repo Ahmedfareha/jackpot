@@ -146,12 +146,14 @@ class App extends Component{
         </div>
         <br/><br/><br/>
         <Marquee></Marquee>
+        <br></br>
         <Title title="LIVE UPDATES" subtitle={date}></Title>
         <Dashboard dashboardData={this.state.dashboardData}></Dashboard>
         <Marquee></Marquee>
-        <br/><br/><br/>
+        <br/><br></br>
         <Title title="RECENT RESULTS"></Title>
         <Table tableData = {this.state.tableData}></Table>
+        <br></br>
         <Title title="WIN LOGS AND ANALYTICS"></Title>
         <Cards trails={t} click={this.openChart}></Cards>
         <Footer></Footer>
