@@ -55,24 +55,25 @@
 }
 @media (max-width:770px){
     .card{
-        padding:30px !important;
+        padding:20px !important;
         display: inline-block !important;
         border: none !important;
     }
     .card-body{
-        padding:30px !important;
+        padding:20px !important;
         display: block !important;
     }
     .card-row{
         display: block !important;
-        padding-left:80px;
-        padding-right: 80px !important;
+        padding-left:50px;
+        padding-right: 60px !important;
     }
     .card-title{
         padding: 10px;
     }
     .card-text{
-        margin: 20px;
+        margin: 10px;
+        font-size: 1.5rem;
     }
     .card-button{
         font-display: block;
@@ -92,22 +93,22 @@
     }
     .card-row{
         display: block !important;
-        padding-left:60px;
-        padding-right: 70px !important;
+        padding-left:50px;
+        padding-right: 60px !important;
     }
     .card-title{
         padding: 10px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .card-text{
-        margin: 15px;
-        font-size: 1.5rem;
+        margin: 10px;
+        font-size: 1.2rem;
     }
     .card-button{
         font-display: block;
         padding: 10px;
         margin: 0px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 .left{
