@@ -43,7 +43,6 @@ const Dashboard = (props) => {
 
     return(
         <div className="row dashboard">
-            <Title title="LIVE UPDATES" subtitle={date}></Title>
             <div className="row dashboard">
                     <h1><b  style={{color:"black"}}>LOADING......</b></h1>
             {/* <Card region="Delhi" status="updated" number="007"></Card>

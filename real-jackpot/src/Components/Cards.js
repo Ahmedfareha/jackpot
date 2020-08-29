@@ -5,7 +5,8 @@ import Title from './Title';
 
 const Cards = (props) => {
     // console.log("TRAILS", props.trails)
-    var n=3, count=0;
+    var n=3;
+    // var count=0;
     var flag = props.trails.length%n;
     var size = flag?(Math.floor(props.trails.length/n)+1):(props.trails.length/n);
     var trailArray = new Array(size);
@@ -21,17 +22,16 @@ const Cards = (props) => {
     // console.log(trailArray)
     if(trailArray){
         const newTrail = trailArray.map(t=>{
-            if(count===0){
-                count=count+1
-                return(
-                    <div className = "row card-row">
-                        <Title title="WIN LOGS AND ANALYTICS"></Title>
-                        <Card info={t[0]} click={props.click}></Card>
-                        <Card info={t[1]} click={props.click}></Card>
-                        <Card info={t[2]} click={props.click}></Card>
-                    </div>
-                )
-            }
+            // if(count===0){
+            //     count=count+1
+            //     return(
+            //         <div className = "row card-row">
+            //             <Card info={t[0]} click={props.click}></Card>
+            //             <Card info={t[1]} click={props.click}></Card>
+            //             <Card info={t[2]} click={props.click}></Card>
+            //         </div>
+            //     )
+            // }
             return (
                 <div className = "row card-row">
                     <Card info={t[0]} click={props.click}></Card>

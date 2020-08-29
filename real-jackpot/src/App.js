@@ -3,6 +3,7 @@ import axios from 'axios'
 import './App.css';
 import Header from './Components/Header'
 import Slideshow from "./Components/Slideshow";
+import Title from "./Components/Title"
 import Dashboard from "./Components/Dashboard"
 import Marquee from './Components/Marquee';
 import Cards from "./Components/Cards";
@@ -126,11 +127,14 @@ class App extends Component{
     // your axios call here
   //  localStorage.setItem("pageData", "Data Retrieved from axios request")
    // route to new page by changing window.location
-   window.open("http://13.59.47.18/Charts", "_blank") //to open new page 
+   window.open("http://13.59.47.18/charts", "_blank") //to open new page 
   //  window.open("http://localhost:3000/charts", "blank")       
   }
 
   render(){
+    var today = new Date(),
+            date =  today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()+' '+today.getHours()+":"+today.getMinutes()+":"+today.getSeconds()+' '+(today.getHours()>=12?'PM':'AM');
+    
     return (
       <div className="App">
         <Header></Header>
@@ -142,10 +146,13 @@ class App extends Component{
         </div>
         <br/><br/><br/>
         <Marquee></Marquee>
+        <Title title="LIVE UPDATES" subtitle={date}></Title>
         <Dashboard dashboardData={this.state.dashboardData}></Dashboard>
         <Marquee></Marquee>
         <br/><br/><br/>
+        <Title title="RECENT RESULTS"></Title>
         <Table tableData = {this.state.tableData}></Table>
+        <Title title="WIN LOGS AND ANALYTICS"></Title>
         <Cards trails={t} click={this.openChart}></Cards>
         <Footer></Footer>
       </div>

@@ -23,7 +23,7 @@ const table = (props) => {
             <div className="row">
             <div className="row col-sm-12 region-table">
                 <div className="table-box" style={{width:"100%"}}>
-                    <Title title="RECENT RESULTS"></Title>
+                    
                     <div className="table-responsive col-lg-12">
                         <div className="table">
                             {/* <thead style={{backgroundColor:"burlywood"}}>
@@ -63,15 +63,14 @@ const table = (props) => {
         <div className="row">
         <div className="row col-sm-12 region-table">
             <div className="table-box" style={{width:"100%"}}>
-                <Title title="RECENT RESULTS"></Title>
                 <div className="table-responsive col-lg-12">
                     <div className="table">
-                        <thead style={{backgroundColor:"darkred"}}>
+                        {/* <thead style={{backgroundColor:"darkred"}}>
                             <tr><th>{month}</th>
                             <th></th><th></th><th></th>
                             <th></th><th></th><th></th>
                             <th></th><th></th><th></th><th></th><th></th></tr>
-                        </thead>
+                        </thead> */}
                         <thead>
                             <tr>
                                 <th style={{width:"20%"}}>Region</th>
