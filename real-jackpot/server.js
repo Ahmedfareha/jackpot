@@ -17,4 +17,8 @@ app.get('/guidelines',(req,res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 })
 
+app.get('/aboutUs',(req,res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+})
+
 app.listen(port, () => console.log(`Running on port ${port}`));
