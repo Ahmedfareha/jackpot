@@ -130,8 +130,8 @@ class App extends Component{
   }
 
   openGuidelines = () =>{
-  //  window.open("http://13.59.47.18/guidelines", "_blank") //to open new page 
-   window.open("http://localhost:3000/guidelines", "blank")       
+   window.open("http://13.59.47.18/guidelines", "_blank") //to open new page 
+  //  window.open("http://localhost:3000/guidelines", "blank")       
   }
 
   render(){
