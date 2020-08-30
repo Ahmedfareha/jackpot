@@ -82,13 +82,12 @@ class App extends Component{
   state = {
     slides: slides,
     dashboardData: [6],
-    tableData: [6]
+    tableData: [6],
+    // guidelinesUrl: 'http://localhost:3000/guidelines',
+    guidelinesUrl: 'http://13.49.47.18/guidelines'
   }
 
-  //  openChart = this.openChart.bind(this);
-
   componentDidMount = () =>{
-    // const axios = require('axios');
     axios({
       method:'post',
       url:'http://13.59.47.18:8081/home/getDataByRegion?region=ghaziabad',
@@ -158,7 +157,7 @@ class App extends Component{
         <Title title="WIN LOGS AND ANALYTICS"></Title>
         <Cards trails={t} click={this.openChart}></Cards>
         <AboutUs></AboutUs>
-        <Footer></Footer>
+        <Footer click={this.state.guidelinesUrl}></Footer>
       </div>
     );
   }

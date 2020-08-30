@@ -8,7 +8,7 @@
 }
 .dashboard{
     display: inline-block !important;
-    margin-top:30px !important;
+    margin-top:10px !important;
     margin-bottom:30px !important
 }
 .dashbaord-card-title{
@@ -64,4 +64,9 @@
 .loader h1{
     font-weight: 700;
     font-size: 4rem !important;
+}
+@media(max-width:500px){
+    .dashboard{
+        margin-top: 0px!important;
+    }
 }
