@@ -3,7 +3,7 @@ import '../Style/Header.css'
 import NavigatorButton from './NavigatorButton';
 import menu from "../assets/menu_emoji_n.jpg"
 
-const header = () => {
+const header = (props) => {
     return(
         // <div>
             <nav>                
@@ -19,7 +19,7 @@ const header = () => {
                         <NavigatorButton name="Charts"/>
                         <NavigatorButton name="Add Game"/>
                         <NavigatorButton name="Leaks"/>
-                        <NavigatorButton name="About Us"/>
+                        <NavigatorButton name="About Us" click={props.aboutClick}/>
                         <NavigatorButton name=""/>
                     </div>
                 </div>
