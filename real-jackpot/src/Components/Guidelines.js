@@ -8,9 +8,9 @@ const Guidelines = () => {
             <Header></Header>
             <Title title="RULES AND GUIDELINES"></Title>
             <div style={{color:"black",padding:"50px",paddingTop:"20px",textAlign:"justified"}}>
-            <h2>
+            
             <h1><b style={{color:"black"}}>Welcome to Real Jackpot</b></h1><br/>
-            <b style={{color:"black"}}>All the Information on this website is fully sponsored.
+            <h2><b style={{color:"black"}}>All the Information on this website is fully sponsored.
             Gambling is illegal game and we do not
             promote such games through this website.
             We do not have such connections with any such
