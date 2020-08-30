@@ -125,8 +125,8 @@ class App extends Component{
     // your axios call here
   //  localStorage.setItem("pageData", "Data Retrieved from axios request")
    // route to new page by changing window.location
-   window.open("http://13.59.47.18/charts", "_blank") //to open new page 
-  //  window.open("http://localhost:3000/charts", "blank")       
+  //  window.open("http://13.59.47.18/charts", "_blank") //to open new page 
+   window.open("http://localhost:3000/charts", "blank")       
   }
 
   openGuidelines = () =>{
@@ -134,13 +134,18 @@ class App extends Component{
   //  window.open("http://localhost:3000/guidelines", "blank")       
   }
 
+  openAboutUs = () =>{
+    window.open("http://13.59.47.18/aboutUs", "_blank") //to open new page 
+    // window.open("http://localhost:3000/aboutUs", "blank")       
+   }
+
   render(){
     var today = new Date(),
             date =  today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()+' '+today.getHours()+":"+today.getMinutes()+":"+today.getSeconds()+' '+(today.getHours()>=12?'PM':'AM');
     
     return (
       <div className="App">
-        <Header></Header>
+        <Header aboutClick={this.openAboutUs}></Header>
         <div className={s.container}>
           <div className={s.header}></div>
             <div className={s.main}>

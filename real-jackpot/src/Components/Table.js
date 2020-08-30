@@ -91,11 +91,6 @@ const table = (props) => {
                             <tr>
                                 <td>L</td><td>O</td><td>A</td><td>D</td><td>I</td>
                                 <td>N</td><td>G</td><td>.</td><td>.</td><td>.</td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td>
-                                <td></td><td></td><td></td><td></td><td></td>
                             {/* LOADING..... */}
                             </tr>                            
                         </tbody>

@@ -7,6 +7,7 @@ import Charts from "./Components/Charts"
 import * as serviceWorker from './serviceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Guidelines from './Components/Guidelines';
+import AboutUsPage from './Components/AboutUsPage';
 
 const routing = (
   <Router>
@@ -14,6 +15,7 @@ const routing = (
       <Route exact path="/" component={App}></Route>
       <Route path="/charts" component={Charts}></Route>
       <Route path="/guidelines" component={Guidelines}></Route>
+      <Route path="/aboutUs" component={AboutUsPage}></Route>
     </div>
   </Router>
 )
