@@ -83,8 +83,6 @@ class App extends Component{
     slides: slides,
     dashboardData: [6],
     tableData: [6],
-    // guidelinesUrl: 'http://localhost:3000/guidelines',
-    guidelinesUrl: 'http://13.49.47.18/guidelines'
   }
 
   componentDidMount = () =>{
@@ -131,6 +129,11 @@ class App extends Component{
   //  window.open("http://localhost:3000/charts", "blank")       
   }
 
+  openGuidelines = () =>{
+  //  window.open("http://13.59.47.18/guidelines", "_blank") //to open new page 
+   window.open("http://localhost:3000/guidelines", "blank")       
+  }
+
   render(){
     var today = new Date(),
             date =  today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()+' '+today.getHours()+":"+today.getMinutes()+":"+today.getSeconds()+' '+(today.getHours()>=12?'PM':'AM');
@@ -157,7 +160,7 @@ class App extends Component{
         <Title title="WIN LOGS AND ANALYTICS"></Title>
         <Cards trails={t} click={this.openChart}></Cards>
         <AboutUs></AboutUs>
-        <Footer click={this.state.guidelinesUrl}></Footer>
+        <Footer click={this.openGuidelines}></Footer>
       </div>
     );
   }
