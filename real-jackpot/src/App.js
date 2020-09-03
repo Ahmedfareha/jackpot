@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import './App.css';
 import Header from './Components/Header'
+import SideMenu from './Components/SideMenu'
 import Slideshow from "./Components/Slideshow";
 import Title from "./Components/Title"
 import Dashboard from "./Components/Dashboard"
@@ -146,7 +147,33 @@ class App extends Component{
     return (
       <div className="App">
         <Header aboutClick={this.openAboutUs}></Header>
-        <div className={s.container}>
+        <SideMenu></SideMenu>
+        <div className="content-page">
+          <div className="container-fluid">
+          <div className={s.container}>
+            <div className={s.header}></div>
+              <div className={s.main}>
+                <Slideshow slides={this.state.slides} />
+              </div>
+          </div>
+          <br/><br/><br/>
+          <Marquee></Marquee>
+          <br></br>
+          <Title title="LIVE UPDATES" subtitle={date}></Title>
+          <Dashboard dashboardData={this.state.dashboardData}></Dashboard>
+          <Marquee></Marquee>
+          <br/><br></br>
+          <Title title="RECENT RESULTS"></Title>
+          <Table tableData = {this.state.tableData}></Table>
+          <br></br>
+          <Title title="WIN LOGS AND ANALYTICS"></Title>
+          <Cards trails={t} click={this.openChart}></Cards>
+          <AboutUs></AboutUs>
+          <Footer click={this.openGuidelines}></Footer>
+          </div>
+        </div>
+        
+        {/* <div className={s.container}>
           <div className={s.header}></div>
             <div className={s.main}>
               <Slideshow slides={this.state.slides} />
@@ -165,7 +192,7 @@ class App extends Component{
         <Title title="WIN LOGS AND ANALYTICS"></Title>
         <Cards trails={t} click={this.openChart}></Cards>
         <AboutUs></AboutUs>
-        <Footer click={this.openGuidelines}></Footer>
+        <Footer click={this.openGuidelines}></Footer> */}
       </div>
     );
   }

@@ -1,6 +1,10 @@
 .nav{
-    background: linear-gradient(75deg, rgb(29, 28, 28), rgb(63, 61, 61));
+    /* background: linear-gradient(75deg, rgb(29, 28, 28), rgb(63, 61, 61)); */
     /* opacity: 0.95; */
+    background-color: #022442;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 .img-responsive{
     border-radius: 1px;
