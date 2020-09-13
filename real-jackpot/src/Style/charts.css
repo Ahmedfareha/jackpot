@@ -1,0 +1,8 @@
+.small-screen{
+    display: none;
+}
+@media(max-width:600px){
+    .small-screen{
+        display: block;
+    }
+}
