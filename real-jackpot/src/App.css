@@ -37,7 +37,7 @@
   }
 }
 .content-page{
-  margin-left: 200px!important;
+  /* margin-left: 200px!important; */
   /* border:20px solid grey; */
   padding-top:60px!important;
   
@@ -47,10 +47,10 @@
   padding: 0px!important;
   /* margin-left:80px!important */ 
 }
-@media(max-width:1200px){
+/* @media(max-width:1200px){
   .content-page{
     margin-left: 70px!important;
     padding-top:60px!important;
     
   }
-}
+} */

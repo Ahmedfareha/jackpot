@@ -84,6 +84,7 @@ class App extends Component{
     slides: slides,
     dashboardData: [6],
     tableData: [6],
+    chartsData: [6]
   }
 
   componentDidMount = () =>{
@@ -119,12 +120,56 @@ class App extends Component{
         tableData: res.data.Data
       })
     })
+
+    axios({
+      method:'get',
+      url:'http://13.59.47.18:8081/home/getChartData?region=ghaziabad',
+      responseType: 'application/json'
+    })
+    .then((res)=>{
+      console.log(res.data.Data)
+      this.setState({
+        chartsData: res.data.Data
+      })
+    })
+    // console.log(this.state.chartsData)
   } 
 
   openChart = () =>{
     console.log("clicked")
     // your axios call here
-  //  localStorage.setItem("pageData", "Data Retrieved from axios request")
+   localStorage.setItem("Row0", this.state.chartsData[0].chartData)
+   localStorage.setItem("Row1", this.state.chartsData[1].chartData)
+   localStorage.setItem("Row2", this.state.chartsData[2].chartData)
+   localStorage.setItem("Row3", this.state.chartsData[3].chartData)
+   localStorage.setItem("Row4", this.state.chartsData[4].chartData)
+   localStorage.setItem("Row5", this.state.chartsData[5].chartData)
+   localStorage.setItem("Row6", this.state.chartsData[6].chartData)
+   localStorage.setItem("Row7", this.state.chartsData[7].chartData)
+   localStorage.setItem("Row8", this.state.chartsData[8].chartData)
+   localStorage.setItem("Row9", this.state.chartsData[9].chartData)
+   localStorage.setItem("Row10", this.state.chartsData[10].chartData)
+   localStorage.setItem("Row11", this.state.chartsData[11].chartData)
+   localStorage.setItem("Row12", this.state.chartsData[12].chartData)
+   localStorage.setItem("Row13", this.state.chartsData[13].chartData)
+   localStorage.setItem("Row14", this.state.chartsData[14].chartData)
+   localStorage.setItem("Row15", this.state.chartsData[15].chartData)
+   localStorage.setItem("Row16", this.state.chartsData[16].chartData)
+   localStorage.setItem("Row17", this.state.chartsData[17].chartData)
+   localStorage.setItem("Row18", this.state.chartsData[18].chartData)
+   localStorage.setItem("Row19", this.state.chartsData[19].chartData)
+   localStorage.setItem("Row20", this.state.chartsData[20].chartData)
+   localStorage.setItem("Row21", this.state.chartsData[21].chartData)
+   localStorage.setItem("Row22", this.state.chartsData[22].chartData)
+   localStorage.setItem("Row23", this.state.chartsData[23].chartData)
+   localStorage.setItem("Row24", this.state.chartsData[24].chartData)
+   localStorage.setItem("Row25", this.state.chartsData[25].chartData)
+   localStorage.setItem("Row26", this.state.chartsData[26].chartData)
+   localStorage.setItem("Row27", this.state.chartsData[27].chartData)
+   localStorage.setItem("Row28", this.state.chartsData[28].chartData)
+   localStorage.setItem("Row29", this.state.chartsData[29].chartData)
+   localStorage.setItem("Row30", this.state.chartsData[30].chartData)
+   
    // route to new page by changing window.location
    window.open("http://13.59.47.18/charts", "_blank") //to open new page 
   //  window.open("http://localhost:3000/charts", "blank")       
@@ -146,8 +191,8 @@ class App extends Component{
     
     return (
       <div className="App">
-        <Header aboutClick={this.openAboutUs}></Header>
-        <SideMenu></SideMenu>
+        <Header aboutClick={this.openAboutUs} chartsClick={this.openChart}></Header>
+        {/* <SideMenu></SideMenu> */}
         <div className="content-page">
           <div className="container-fluid">
           <div className={s.container}>
@@ -167,7 +212,7 @@ class App extends Component{
           <Table tableData = {this.state.tableData}></Table>
           <br></br>
           <Title title="WIN LOGS AND ANALYTICS"></Title>
-          <Cards trails={t} click={this.openChart}></Cards>
+          <Cards trails={t} click={this.openChart} chartsData = {this.state.chartsData}></Cards>
           <AboutUs></AboutUs>
           <Footer click={this.openGuidelines}></Footer>
           </div>
