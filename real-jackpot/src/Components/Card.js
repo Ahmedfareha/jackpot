@@ -12,7 +12,7 @@ const Card = (props) => {
                 <div className="left"><h2>022</h2></div>
                 <div className="right"><h2>780</h2></div>
             </div>
-            <h4 className="card-button" onClick={props.click}>{props.info.loading}</h4>
+            <h4 className="card-button"  onClick={()=>props.click(props.info.location)}>{props.info.loading}</h4>
             </div>
         </div>
     )

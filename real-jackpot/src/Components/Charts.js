@@ -8,6 +8,8 @@ import '../Style/charts.css'
 
 const Charts = (props) => {
     console.log(props)
+    var region= localStorage.getItem("region")
+    
     
     return(
         <div>
@@ -22,7 +24,7 @@ const Charts = (props) => {
             <br class="small-screen"></br>
             <br class="small-screen"></br>
             <Title title="CHARTS"></Title>
-            <Title title="{props.region}"></Title>
+            <Title title={region}></Title>
             <ChartsTable></ChartsTable>
         </div>
     )

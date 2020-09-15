@@ -47,7 +47,7 @@ const t = [
   {
     "key":0,
     "name":"Time 2345",
-    "location":"Gaziabad",
+    "location":"Ghaziabad",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
     "loading":"Show Charts"
@@ -135,10 +135,24 @@ class App extends Component{
     // console.log(this.state.chartsData)
   } 
 
-  openChart = () =>{
-    console.log("clicked")
-    // your axios call here
-   localStorage.setItem("Row0", this.state.chartsData[0].chartData)
+  openChart = (value) => {
+    // console.log("here")
+    console.log(value)
+    var Url = 'http://13.59.47.18:8081/home/getChartData?region='+ value.toLowerCase()
+    console.log(Url)
+
+    axios({
+      method:'get',
+      url:Url,
+      responseType: 'application/json'
+    })
+    .then((res)=>{
+      console.log(res.data.Data)
+      this.setState({
+        chartsData: res.data.Data
+      })
+      localStorage.setItem("region", value)
+      localStorage.setItem("Row0", this.state.chartsData[0].chartData)
    localStorage.setItem("Row1", this.state.chartsData[1].chartData)
    localStorage.setItem("Row2", this.state.chartsData[2].chartData)
    localStorage.setItem("Row3", this.state.chartsData[3].chartData)
@@ -172,7 +186,11 @@ class App extends Component{
    
    // route to new page by changing window.location
    window.open("http://13.59.47.18/charts", "_blank") //to open new page 
-  //  window.open("http://localhost:3000/charts", "blank")       
+  //  window.open("http://localhost:3000/charts", "blank")
+    })
+
+    // your axios call here
+          
   }
 
   openGuidelines = () =>{

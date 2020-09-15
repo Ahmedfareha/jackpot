@@ -16,7 +16,7 @@ const header = (props) => {
                     </div>
                     <div className="row col-sm-10">
                         <NavigatorButton name="Home"/>
-                        <NavigatorButton name="Charts" click={props.chartsClick}/>
+                        <NavigatorButton name="Charts" click={props.chartsClick} region="Ghaziabad"/>
                         <NavigatorButton name="Add Game"/>
                         <NavigatorButton name="Leaks"/>
                         <NavigatorButton name="About Us" click={props.aboutClick}/>
