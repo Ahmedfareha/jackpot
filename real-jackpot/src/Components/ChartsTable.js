@@ -125,18 +125,18 @@ const ChartsTable = (props) => {
                             <thead>
                                 <tr>
                                     <th style={{width:"10%"}}>S.No.</th>
-                                    <th style={{width:"7.5%"}}>{date} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-1} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-2} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-3} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-4} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-5} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-6} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-7} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-8} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-9} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-10} {monthShort}</th>
-                                    <th style={{width:"7.5%"}}>{date-11} {monthShort}</th>
+                                    <th style={{width:"7.5%"}}>{monthsShort[0]}</th>
+                                    <th style={{width:"7.5%"}}>{monthsShort[1]}</th>
+                                    <th style={{width:"7.5%"}}>{monthsShort[2]}</th>
+                                    <th style={{width:"7.5%"}}>{monthsShort[3]}</th>
+                                    <th style={{width:"7.5%"}}>{monthsShort[4]}</th>
+                                    <th style={{width:"7.5%"}}> {monthsShort[5]}</th>
+                                    <th style={{width:"7.5%"}}> {monthsShort[6]}</th>
+                                    <th style={{width:"7.5%"}}> {monthsShort[7]}</th>
+                                    <th style={{width:"7.5%"}}> {monthsShort[8]}</th>
+                                    <th style={{width:"7.5%"}}> {monthsShort[9]}</th>
+                                    <th style={{width:"7.5%"}}> {monthsShort[10]}</th>
+                                    <th style={{width:"7.5%"}}> {monthsShort[11]}</th>
                                     <th></th>
                                 </tr>
                             </thead>
