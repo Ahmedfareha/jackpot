@@ -7,6 +7,8 @@ const Row = (props) => {
 
     if(props.top10LuckyNo != undefined){
         const trails = props.top10LuckyNo.map(t=>{
+            if(t.lucky_no=='null'||t.lucky_no==" "||t.lucky_no==undefined)
+            t.lucky_no = '-'
             return(
                 <td style={{width:"8%"}}>{t.lucky_no}</td>
             )
