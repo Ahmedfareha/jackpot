@@ -7,11 +7,11 @@ const Card = (props) => {
             <div className="card-body">
             <h4 className="card-title">{props.info.location}</h4>
             <h1 className="card-text">{props.info.name} </h1>
-            <div className="card-text win-number">
+            {/* <div className="card-text win-number">
                 update
                 <div className="left"><h2>022</h2></div>
                 <div className="right"><h2>780</h2></div>
-            </div>
+            </div> */}
             <h4 className="card-button"  onClick={()=>props.click(props.info.location)}>{props.info.loading}</h4>
             </div>
         </div>

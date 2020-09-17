@@ -30,23 +30,23 @@ const slides = [slide1, slide2, slide3, slide4];
 const t = [
   {
     "key":0,
-    "name":"Time 2345",
-    "location":"Mumbai",
+    "name":"Time 9:00 pm",
+    "location":"New_Moradabad",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
     "loading":"Show Charts"
   },
   {
     "key":3,
-    "name":"Time 2345",
-    "location":"Delhi",
+    "name":"Time 10:30 pm",
+    "location":"Gali",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
     "loading":"Show Charts"
   },
   {
     "key":0,
-    "name":"Time 2345",
+    "name":"Time 7:30 pm",
     "location":"Ghaziabad",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
@@ -54,15 +54,15 @@ const t = [
   },
   {
     "key":1,
-    "name":"Time 3555",
+    "name":"Time 5:25 pm",
     "location":"Faridabad",
-    "summary":"“Winning isn’t everything, but it beats anything that comes in second. Bam!!!!!!!!!”",
+    "summary":"�Winning isn�t everything, but it beats anything that comes in second. Bam!!!!!!!!!�",
     "difficulty":"hard",
     "loading":"Show Charts"
   },
   {
     "key":2,
-    "name":"Time 2345",
+    "name":"Time  4:30 pm",
     "location":"Moradabad",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
@@ -70,8 +70,8 @@ const t = [
   },
   {
     "key":3,
-    "name":"Time 2345",
-    "location":"Bangalore",
+    "name":"Time 11:59 pm",
+    "location":"Deshawer",
     "summary":"I've found that luck is quite predictable. If you want more luck, take more chances.",
     "difficulty":"hard",
     "loading":"Show Charts"

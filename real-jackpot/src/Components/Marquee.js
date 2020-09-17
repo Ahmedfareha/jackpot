@@ -4,7 +4,7 @@ import "../Style/marquee.css"
 const Marquee = () =>{
     return(
         <div className="wrapper">
-            <p>Hey, how you're doing? Sorry you can't get through.</p>
+            <p>100% leak Moradabad Call Shagun: 8287396905</p>
         </div>
     )
 }
